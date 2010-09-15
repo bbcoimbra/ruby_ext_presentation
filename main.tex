@@ -1,0 +1,66 @@
+\documentclass{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage[english,brazil]{babel}
+\usepackage[T1]{fontenc}
+\usetheme{Warsaw}
+\usecolortheme{default}
+\title{Extensões Nativas}
+\author{Bruno Coimbra}
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+	\frametitle{Programação}
+	\tableofcontents[currentsection,currentsubsection]
+	\end{frame}
+}
+\begin{document}
+\frame{\titlepage}
+\section{Motivações}
+\begin{frame}
+  \frametitle{Motivações}
+	\begin{itemize}[<+->]
+	  \item Re-uso de libs em C
+		\item Velocidade de Execução
+		\item Controle de dispositivos de HW
+		\item Divertido =D
+	\end{itemize}
+\end{frame}
+\section{Dificuldades}
+\begin{frame}
+  \frametitle{Dificuldades}
+  \begin{itemize}[<+->]
+	  \item Programar em \emph C
+		\item Difícil de automatizar os teste
+		\item Escassez de documentação
+	\end{itemize}
+\end{frame}
+\section{Necessidade}
+\begin{frame}
+  \frametitle{Necessidade}
+  \begin{itemize}[<+->]
+	  \item Calcular e Validar CNPJs (mod11)
+		\begin{itemize}[<+->]
+			\item Ordem de 100 000/s
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+\section{Implementação em Ruby}
+\begin{frame}
+  \frametitle{Vantagens}
+	\begin{itemize}[<+->]
+	  \item Simples
+		\item Elegante
+		\item Lenta \emph \#fail
+	\end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Desvantagens}
+	\begin{itemize}[<+->]
+	  \item Ruby é lento
+		\begin{itemize}[<+->]
+		  \item Muitos Objetos
+			\item Uso excessivo de Memória
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+\end{document}
